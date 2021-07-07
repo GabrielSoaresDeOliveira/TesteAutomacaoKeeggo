@@ -1,0 +1,240 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 6,
+        "name": "",
+        "description": "  \tEu como novo cliente\n  \tQuero acessar o site advantageonlineshopping.com\n  \tPara criar uma nova conta",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2021-07-07T18:42:38.640Z",
+        "line": 21,
+        "name": "Cadastro_Novo_Cliente",
+        "description": "",
+        "id": "cadastro-novo-cliente;cadastro-novo-cliente;;2",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 3946004200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "que vou para a home page para iniciar o \"cenário\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cenário",
+                  "offset": 41
+                }
+              ],
+              "location": "steps.CommonSteps.homePage(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1724170900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "clico no ícone \u0027USER\u0027",
+            "match": {
+              "location": "steps.CommonSteps.btnUser()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 5083961800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "clico em \u0027CREATE NEW ACCOUNT\u0027 para ir a pagina de cadastro",
+            "match": {
+              "location": "steps.CadastroSteps.btnCreateNewAccount()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 6796458900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "entro com meus dados na pagina de cadastro",
+            "match": {
+              "location": "steps.CadastroSteps.dadoCadastro()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 10987382700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "verifico se estou logado na home page",
+            "match": {
+              "location": "steps.CommonSteps.verificar()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Cadastro"
+          },
+          {
+            "name": "@Advantage"
+          }
+        ]
+      }
+    ],
+    "name": "Cadastro_Novo_Cliente",
+    "description": "",
+    "id": "cadastro-novo-cliente",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/java/features/Cadastro.feature",
+    "tags": [
+      {
+        "name": "@Cadastro",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Advantage",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 11
+        }
+      }
+    ]
+  },
+  {
+    "line": 4,
+    "elements": [
+      {
+        "line": 6,
+        "name": "",
+        "description": "  \tEu como cliente já cadastrado\n  \tQuero acessar o site advantageonlineshopping.com\n  \tPara fazer login na minha conta",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2021-07-07T18:43:07.252Z",
+        "line": 20,
+        "name": "Login_Cliente_Ja_Cadastrado",
+        "description": "",
+        "id": "login-cliente-ja-cadastrado;login-cliente-ja-cadastrado;;2",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00274.0.0-beta-4\u0027, revision: \u002729f46d02dd\u0027\nSystem info: host: \u0027LAPTOP-OIQKM1FI\u0027, ip: \u0027192.168.1.110\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002716.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [null, get {url\u003dhttps://www.advantageonlineshopping.com/#/}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\\Users\\gabri\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57518/devtoo..., se:cdpVersion: 91.0.4472.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:162)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:137)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:612)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:326)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:1005)\r\n\tat logic.CommonLogic.acessarHome(CommonLogic.java:22)\r\n\tat steps.CommonSteps.homePage(CommonSteps.java:12)\r\n\tat ✽.que vou para a home page para iniciar o \"cenário\"(file:///C:/Users/gabri/eclipse-workspace/TesteDeAutomacao/src/test/java/features/Login.feature:12)\r\n",
+              "duration": 4413800,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "que vou para a home page para iniciar o \"cenário\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cenário",
+                  "offset": 41
+                }
+              ],
+              "location": "steps.CommonSteps.homePage(java.lang.String)"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "clico no ícone \u0027USER\u0027",
+            "match": {
+              "location": "steps.CommonSteps.btnUser()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "entro com meu \"aaaaaaaaaaa\" e \"aaaaaA1\" para efetuar o login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "aaaaaaaaaaa",
+                  "offset": 15
+                },
+                {
+                  "val": "aaaaaA1",
+                  "offset": 31
+                }
+              ],
+              "location": "steps.LoginSteps.efetuarlogin(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "verifico se estou logado na home page",
+            "match": {
+              "location": "steps.CommonSteps.verificar()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@Advantage"
+          }
+        ]
+      }
+    ],
+    "name": "Login_Cliente_Ja_Cadastrado",
+    "description": "",
+    "id": "login-cliente-ja-cadastrado",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/java/features/Login.feature",
+    "tags": [
+      {
+        "name": "@Login",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Advantage",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 8
+        }
+      }
+    ]
+  }
+]
