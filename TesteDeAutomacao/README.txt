@@ -5,7 +5,7 @@ Automação do sistema Advantage online shopping em web
 - Cadastro_Novo_Cliente
 - Login_Cliente_Ja_Cadastrado
 
-*intruções
+*instruções
 - Para rodar cada cenário, utilize as features localizadas em \TesteDeAutomacao\src\test\java\features.
 - Clique com o botão direito do mouse sobre a feature aberta, em seguida selecione 'Run as' e 'Cucumber Feature'.
 - A automação iniciará o cenário escolhido em seguida.
